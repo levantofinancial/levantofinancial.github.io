@@ -1,36 +1,41 @@
 h1.homePage {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Helvetica Light', sans-serif;
 	font-size: 40px;
 	text-align: left;
+	font-weight: lighter;
 	color: #333333;
 	padding-left: 20px;
 	padding-right: 20px;
 }
 
 h1 {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Helvetica Light', sans-serif;
 	font-size: 27px;
 	text-align: left;
+	font-weight: lighter;
 	color: #333333;
 }
 
 h2 {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Helvetica Light', sans-serif;
 	font-size: 17px;
 	text-align: left;
+	font-weight: lighter;
 	color: #333333;
 }
 
 h3 {
-	font-family: 'Muli', sans-serif;
+	font-family: 'Helvetica Light', sans-serif;
 	font-size: 16px;
+	font-weight: lighter;
 	text-align: left;
 	color: #333333;
 }
 
 p {
-	font-family: 'Helvetica', sans-serif;
+	font-family: 'Helvetica Light', sans-serif;
 	font-size: 15px;
+	font-weight: lighter;
 	text-align: left;
 	color: #333333;
 }
