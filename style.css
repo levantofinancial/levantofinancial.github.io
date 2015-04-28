@@ -1,7 +1,7 @@
 h1.homePage {
 	font-family: 'Muli', sans-serif;
 	font-size: 40px;
-	text-align: center;
+	text-align: left;
 	color: #333333;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -10,7 +10,7 @@ h1.homePage {
 h1 {
 	font-family: 'Muli', sans-serif;
 	font-size: 27px;
-	text-align: center;
+	text-align: left;
 	color: #333333;
 }
 
