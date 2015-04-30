@@ -55,7 +55,12 @@ article {
 }
 
 a.dynamicLinks {
+	font-family: 'Helvetica Light', sans-serif;
+	font-size: 15px;
+	font-weight: lighter;
 	color: #3399FF;
+	text-align: left;
+	display: inline;
 }
 
 
