@@ -101,7 +101,7 @@
       <option value="WI">Wisconsin</option>
       <option value="WY">Wyoming</option>
     </select>
-  </div><script>$(".chosen-select").chosen()</script>
+  </div>
 
   <div class="input-group">
     <span class="input-group-addon" id="basic-addon1">Zip/Postal Code</span>
@@ -113,6 +113,7 @@
     <input type="text" class="form-control" placeholder="123 - 456 - 7890" aria-describedby="basic-addon1">
   </div>
 
+  <script>$(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/chosen/chosen.jquery.min.js"></script>
