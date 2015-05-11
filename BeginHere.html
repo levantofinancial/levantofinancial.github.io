@@ -117,7 +117,11 @@
 
   </div>
 
-  <script>$(".chosen-select").chosen({no_results_text: "Oops, nothing found!"});</script>
+  <script>  $(".chosen-select").chosen({
+    disable_search_threshold: 10,
+    no_results_text: "Oops, nothing found!",
+    width: "95%"
+  });</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="chosen_v1.4.2/chosen.jquery.js"></script>
