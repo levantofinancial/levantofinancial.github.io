@@ -7,7 +7,7 @@
     <title>Begin Here</title>
 
     <link href="chosen_v1.4.2/chosen.css" rel="stylesheet">
-    <!--<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style_app.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,7 +49,7 @@
     </div>
 
     <div>
-      <select data-placeholder="Choose a State" class="chosen-select" style="width:350px;" tabindex="2">
+      <select data-placeholder="Choose a State" class="select-dropdown" style="width:350px;" tabindex="2">
         <option value=""></option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
@@ -117,7 +117,7 @@
 
   </div>
 
-  <script>  $(".chosen-select").chosen({
+  <script>  $(".select-dropdown").chosen({
     disable_search_threshold: 10,
     no_results_text: "Oops, nothing found!",
     width: "95%"
