@@ -48,7 +48,7 @@
   <div class="row">
     <div class="col-sm-2 nav_scroll" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked affix-top" data-spy="affix">
-            <li class="spy_list"><a href="#BasicInfo">Basic Info</a></li>
+            <li class="spy_list active"><a href="#BasicInfo">Basic Info</a></li>
             <li class="spy_list"><a href="#Income">Income</a></li>
             <li class="spy_list"><a href="#MonthlyExpenses">Monthly Expenses</a></li>
             <li class="spy_list"><a href="#InsuranceAndLoans">Insurance and Loans</a></li>
@@ -163,8 +163,8 @@
             </div>
 
             <h1 id="Income">Income</h1>
-            <div id="headerDivImg">
-              <div id="titleTextImg">
+            <div id="headerDivImg_income">
+              <div id="titleTextImg_income">
                 <p>Please choose the pay frequency and amount per pay period (after all taxes and deductions) of all income sources.</p>
                 <div class="row">
                   <div class="col-sm-3">
@@ -196,14 +196,14 @@
                   </div>
                   </div>
                   <div class="col-sm-3">
-                    <a id="imageDivLink" href="javascript:toggle5('contentDivImg', 'imageDivLink');"><img src="assets/plus.png"></a>
+                    <a id="imageDivLink_income" href="javascript:toggle5('contentDivImg_income', 'imageDivLink_income');"><img src="assets/plus.png"></a>
                   </div>
                 </div>
               </div>
             </div>
 
-              <div id="contentDivImg" style="display: none;">
-                <div id="headerDivImg1">
+              <div id="contentDivImg_income" style="display: none;">
+                <div id="headerDivImg_income1">
                   <div class="row">
                     <div class="col-sm-3">
                     <div class="input-group">
@@ -234,13 +234,13 @@
                     </div>
                     </div>
                     <div class="col-sm-3">
-                      <a id="imageDivLink1" href="javascript:toggle5('contentDivImg1', 'imageDivLink1');"><img src="assets/plus.png"></a>
+                      <a id="imageDivLink_income1" href="javascript:toggle5('contentDivImg_income1', 'imageDivLink_income1');"><img src="assets/plus.png"></a>
                     </div>
                   </div>
                 </div>
               </div>
 
-                  <div id="contentDivImg1" style="display: none;">
+                  <div id="contentDivImg_income1" style="display: none;">
                     <div class="row">
                       <div class="col-sm-3">
                       <div class="input-group">
@@ -274,9 +274,598 @@
                   </div>
             
             <h1 id="MonthlyExpenses">Monthly Expenses</h1>
-            <p>Integer pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien vel, porttitor bibendum enim. Donec sed nibh vitae lorem porttitor blandit in nec ante. Pellentesque vitae metus ipsum. Phasellus sed nunc ac sem malesuada condimentum. Etiam in aliquam lectus. Nam vel sapien diam. Donec pharetra id arcu eget blandit. Proin imperdiet mattis augue in porttitor. Quisque tempus enim id lobortis feugiat. Suspendisse tincidunt risus quis dolor fringilla blandit. Ut sed sapien at purus lacinia porttitor. Nullam iaculis, felis a pretium ornare, dolor nisl semper tortor, vel sagittis lacus est consequat eros. Sed id pretium nisl. Curabitur dolor nisl, laoreet vitae aliquam id, tincidunt sit amet mauris.</p>
-            <p>Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget ante rutrum adipiscing. Cras interdum ipsum mattis, tempus mauris vel, semper ipsum. Duis sed dolor ut enim lobortis pellentesque ultricies ac ligula. Pellentesque convallis elit nisi, id vulputate ipsum ullamcorper ut. Cras ac pulvinar purus, ac viverra est. Suspendisse potenti. Integer pellentesque neque et elementum tempus. Curabitur bibendum in ligula ut rhoncus.</p>
-            <p>Quisque pharetra velit id velit iaculis pretium. Nullam a justo sed ligula porta semper eu quis enim. Pellentesque pellentesque, metus at facilisis hendrerit, lectus velit facilisis leo, quis volutpat turpis arcu quis enim. Nulla viverra lorem elementum interdum ultricies. Suspendisse accumsan quam nec ante mollis tempus. Morbi vel accumsan diam, eget convallis tellus. Suspendisse potenti.</p>
+              <h2>Please list your monthly cost for the following expenses.</h2>
+              <p><b>Housing:</b></p>
+                <div id="headerDivImg_housing">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">Description</span>
+                          <input type="text" class="form-control" placeholder="Mortgage or Rent Payment" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                          <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <a id="imageDivLink_housing" href="javascript:toggle5('contentDivImg_housing', 'imageDivLink_housing');"><img src="assets/plus.png"></a>
+                      </div>
+                    </div>
+                </div>
+
+                  <div id="contentDivImg_housing" style="display: none;">
+                    <div id="headerDivImg_housing1">
+                      <div id="titleTextImg_housing1">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="input-group">
+                              <span class="input-group-addon" id="basic-addon1">Description</span>
+                              <input type="text" class="form-control" placeholder="Property Taxes" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="input-group">
+                              <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                              <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <a id="imageDivLink_housing1" href="javascript:toggle5('contentDivImg_housing1', 'imageDivLink_housing1');"><img src="assets/plus.png"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div id="contentDivImg_housing1" style="display: none;">
+                        <div id="headerDivImg_housing2">
+                          <div id="titleTextImg_housing2">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <div class="input-group">
+                                <span class="input-group-addon" id="basic-addon1">Description</span>
+                                <input type="text" class="form-control" placeholder="Electricity" aria-describedby="basic-addon1">
+                            </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                  <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <a id="imageDivLink_housing2" href="javascript:toggle5('contentDivImg_housing2', 'imageDivLink_housing2');"><img src="assets/plus.png"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                          <div id="contentDivImg_housing2" style="display: none;">
+                            <div id="headerDivImg_housing3">
+                              <div id="titleTextImg_housing3">
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon1">Description</span>
+                                    <input type="text" class="form-control" placeholder="Natural Gas" aria-describedby="basic-addon1">
+                                </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="input-group">
+                                      <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                      <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <a id="imageDivLink_housing3" href="javascript:toggle5('contentDivImg_housing3', 'imageDivLink_housing3');"><img src="assets/plus.png"></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                              <div id="contentDivImg_housing3" style="display: none;">
+                                <div id="headerDivImg_housing4">
+                                  <div id="titleTextImg_housing4">
+                                    <div class="row">
+                                      <div class="col-sm-4">
+                                        <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon1">Description</span>
+                                        <input type="text" class="form-control" placeholder="Water" aria-describedby="basic-addon1">
+                                    </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="input-group">
+                                          <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                          <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <a id="imageDivLink_housing4" href="javascript:toggle5('contentDivImg_housing4', 'imageDivLink_housing4');"><img src="assets/plus.png"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                  <div id="contentDivImg_housing4" style="display: none;">
+                                    <div id="headerDivImg_housing5">
+                                      <div id="titleTextImg_housing5">
+                                        <div class="row">
+                                          <div class="col-sm-4">
+                                            <div class="input-group">
+                                            <span class="input-group-addon" id="basic-addon1">Description</span>
+                                            <input type="text" class="form-control" placeholder="Trash" aria-describedby="basic-addon1">
+                                        </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                            <div class="input-group">
+                                              <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                              <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                            <a id="imageDivLink_housing5" href="javascript:toggle5('contentDivImg_housing5', 'imageDivLink_housing5');"><img src="assets/plus.png"></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                      <div id="contentDivImg_housing5" style="display: none;">
+                                        <div id="headerDivImg_housing6">
+                                          <div id="titleTextImg_housing6">
+                                            <div class="row">
+                                              <div class="col-sm-4">
+                                                <div class="input-group">
+                                                <span class="input-group-addon" id="basic-addon1">Description</span>
+                                                <input type="text" class="form-control" placeholder="Cable" aria-describedby="basic-addon1">
+                                            </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                <div class="input-group">
+                                                  <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                  <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                <a id="imageDivLink_housing6" href="javascript:toggle5('contentDivImg_housing6', 'imageDivLink_housing6');"><img src="assets/plus.png"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                          <div id="contentDivImg_housing6" style="display: none;">
+                                            <div id="headerDivImg_housing7">
+                                              <div id="titleTextImg_housing7">
+                                                <div class="row">
+                                                  <div class="col-sm-4">
+                                                    <div class="input-group">
+                                                    <span class="input-group-addon" id="basic-addon1">Description</span>
+                                                    <input type="text" class="form-control" placeholder="Internet" aria-describedby="basic-addon1">
+                                                </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="input-group">
+                                                      <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                      <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <a id="imageDivLink_housing7" href="javascript:toggle5('contentDivImg_housing7', 'imageDivLink_housing7');"><img src="assets/plus.png"></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                              <div id="contentDivImg_housing7" style="display: none;">
+                                                <div id="headerDivImg_housing8">
+                                                  <div id="titleTextImg_housing8">
+                                                    <div class="row">
+                                                      <div class="col-sm-4">
+                                                        <div class="input-group">
+                                                        <span class="input-group-addon" id="basic-addon1">Description</span>
+                                                        <input type="text" class="form-control" placeholder="Mobile Phone" aria-describedby="basic-addon1">
+                                                    </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                        <div class="input-group">
+                                                          <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                          <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                        <a id="imageDivLink_housing8" href="javascript:toggle5('contentDivImg_housing8', 'imageDivLink_housing8');"><img src="assets/plus.png"></a>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                  <div id="contentDivImg_housing8" style="display: none;">
+                                                    <div id="headerDivImg_housing9">
+                                                      <div id="titleTextImg_housing9">
+                                                        <div class="row">
+                                                          <div class="col-sm-4">
+                                                            <div class="input-group">
+                                                            <span class="input-group-addon" id="basic-addon1">Description</span>
+                                                            <input type="text" class="form-control" placeholder="Security Service" aria-describedby="basic-addon1">
+                                                        </div>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                            <div class="input-group">
+                                                              <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                              <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                            </div>
+                                                          </div>
+                                                          <div class="col-sm-4">
+                                                            <a id="imageDivLink_housing9" href="javascript:toggle5('contentDivImg_housing9', 'imageDivLink_housing9');"><img src="assets/plus.png"></a>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+
+                                                      <div id="contentDivImg_housing9" style="display: none;">
+                                                        <div id="headerDivImg_housing10">
+                                                          <div id="titleTextImg_housing10">
+                                                            <div class="row">
+                                                              <div class="col-sm-4">
+                                                                <div class="input-group">
+                                                                <span class="input-group-addon" id="basic-addon1">Description</span>
+                                                                <input type="text" class="form-control" placeholder="Maintenance" aria-describedby="basic-addon1">
+                                                            </div>
+                                                              </div>
+                                                              <div class="col-sm-4">
+                                                                <div class="input-group">
+                                                                  <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                                  <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-4">
+                                                                <a id="imageDivLink_housing10" href="javascript:toggle5('contentDivImg_housing10', 'imageDivLink_housing10');"><img src="assets/plus.png"></a>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+
+                                                          <div id="contentDivImg_housing10" style="display: none;">
+                                                            <div id="headerDivImg_housing11">
+                                                              <div id="titleTextImg_housing11">
+                                                                <div class="row">
+                                                                  <div class="col-sm-4">
+                                                                    <div class="input-group">
+                                                                    <span class="input-group-addon" id="basic-addon1">Description</span>
+                                                                    <input type="text" class="form-control" placeholder="Other" aria-describedby="basic-addon1">
+                                                                </div>
+                                                                  </div>
+                                                                  <div class="col-sm-4">
+                                                                    <div class="input-group">
+                                                                      <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                                      <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+              <p><b>Transportation:</b></p>
+                <div id="headerDivImg_transportation">
+                    <div class="row">
+                      <div class="col-sm-4">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                            Expense Type
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                          <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <a id="imageDivLink_transportation" href="javascript:toggle5('contentDivImg_transportation', 'imageDivLink_transportation');"><img src="assets/plus.png"></a>
+                      </div>
+                    </div>
+                </div>
+
+                  <div id="contentDivImg_transportation" style="display: none;">
+                    <div id="headerDivImg_transportation1">
+                      <div id="titleTextImg_transportation1">
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                Expense Type
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="input-group">
+                              <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                              <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <a id="imageDivLink_transportation1" href="javascript:toggle5('contentDivImg_transportation1', 'imageDivLink_transportation1');"><img src="assets/plus.png"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                      <div id="contentDivImg_transportation1" style="display: none;">
+                        <div id="headerDivImg_transportation2">
+                          <div id="titleTextImg_transportation2">
+                            <div class="row">
+                              <div class="col-sm-4">
+                                <div class="dropdown">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                    Expense Type
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                  <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                              <div class="col-sm-4">
+                                <a id="imageDivLink_transportation2" href="javascript:toggle5('contentDivImg_transportation2', 'imageDivLink_transportation2');"><img src="assets/plus.png"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                          <div id="contentDivImg_transportation2" style="display: none;">
+                            <div id="headerDivImg_transportation3">
+                              <div id="titleTextImg_transportation3">
+                                <div class="row">
+                                  <div class="col-sm-4">
+                                    <div class="dropdown">
+                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                        Expense Type
+                                        <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <div class="input-group">
+                                      <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                      <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-4">
+                                    <a id="imageDivLink_transportation3" href="javascript:toggle5('contentDivImg_transportation3', 'imageDivLink_transportation3');"><img src="assets/plus.png"></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                              <div id="contentDivImg_transportation3" style="display: none;">
+                                <div id="headerDivImg_transportation4">
+                                  <div id="titleTextImg_transportation4">
+                                    <div class="row">
+                                      <div class="col-sm-4">
+                                        <div class="dropdown">
+                                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                            Expense Type
+                                            <span class="caret"></span>
+                                          </button>
+                                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <div class="input-group">
+                                          <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                          <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-4">
+                                        <a id="imageDivLink_transportation4" href="javascript:toggle5('contentDivImg_transportation4', 'imageDivLink_transportation4');"><img src="assets/plus.png"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                  <div id="contentDivImg_transportation4" style="display: none;">
+                                    <div id="headerDivImg_transportation5">
+                                      <div id="titleTextImg_transportation5">
+                                        <div class="row">
+                                          <div class="col-sm-4">
+                                            <div class="dropdown">
+                                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                Expense Type
+                                                <span class="caret"></span>
+                                              </button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                            <div class="input-group">
+                                              <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                              <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-4">
+                                            <a id="imageDivLink_transportation5" href="javascript:toggle5('contentDivImg_transportation5', 'imageDivLink_transportation5');"><img src="assets/plus.png"></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
+                                      <div id="contentDivImg_transportation5" style="display: none;">
+                                        <div id="headerDivImg_transportation6">
+                                          <div id="titleTextImg_transportation6">
+                                            <div class="row">
+                                              <div class="col-sm-4">
+                                                <div class="dropdown">
+                                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    Expense Type
+                                                    <span class="caret"></span>
+                                                  </button>
+                                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                <div class="input-group">
+                                                  <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                  <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-4">
+                                                <a id="imageDivLink_transportation6" href="javascript:toggle5('contentDivImg_transportation6', 'imageDivLink_transportation6');"><img src="assets/plus.png"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                          <div id="contentDivImg_transportation6" style="display: none;">
+                                            <div id="headerDivImg_transportation7">
+                                              <div id="titleTextImg_transportation7">
+                                                <div class="row">
+                                                  <div class="col-sm-4">
+                                                    <div class="dropdown">
+                                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        Expense Type
+                                                        <span class="caret"></span>
+                                                      </button>
+                                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <div class="input-group">
+                                                      <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                      <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-4">
+                                                    <a id="imageDivLink_transportation7" href="javascript:toggle5('contentDivImg_transportation7', 'imageDivLink_transportation7');"><img src="assets/plus.png"></a>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+
+                                              <div id="contentDivImg_transportation7" style="display: none;">
+                                                <div id="headerDivImg_transportation8">
+                                                  <div id="titleTextImg_transportation8">
+                                                    <div class="row">
+                                                      <div class="col-sm-4">
+                                                        <div class="dropdown">
+                                                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                            Expense Type
+                                                            <span class="caret"></span>
+                                                          </button>
+                                                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Payment</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Auto Insurance</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Gasoline (15th and 30th)</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Oil Changes</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Registration</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Maintenance</a></li>
+                                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                                          </ul>
+                                                        </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                        <div class="input-group">
+                                                          <span class="input-group-addon" id="basic-addon1">Monthly Cost $</span>
+                                                          <input type="text" class="form-control" placeholder="3500" aria-describedby="basic-addon1">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
 
             <h1 id="InsuranceAndLoans">Insurance and Loans</h1>
             <p>Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi. Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit egestas a. Sed luctus metus id mi gravida, faucibus convallis neque pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius libero.</p>
