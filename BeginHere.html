@@ -26,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-    <img class="brand" src="Levanto_logo.jpg">
+    <img class="brand" src="assets/Levanto_logo.jpg">
   </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,10 +46,10 @@
 
 <div class="BeginHere_container">
   <div class="row">
-    <div class="col-sm-2 nav" id="myScrollspy">
+    <div class="col-sm-2 nav_scroll" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked affix-top" data-spy="affix">
             <li class="spy_list"><a href="#BasicInfo">Basic Info</a></li>
-            <li class="spy_list"><a href="#IncomeAndExpenses">Income and Expenses</a></li>
+            <li class="spy_list"><a href="#Income">Income</a></li>
             <li class="spy_list"><a href="#MonthlyExpenses">Monthly Expenses</a></li>
             <li class="spy_list"><a href="#InsuranceAndLoans">Insurance and Loans</a></li>
         </ul>
@@ -162,9 +162,115 @@
               </div>
             </div>
 
-            <h1 id="IncomeAndExpenses">Income and Expenses</h1>
-            <p>Nullam hendrerit justo non leo aliquet imperdiet. Etiam in sagittis lectus. Suspendisse ultrices placerat accumsan. Mauris quis dapibus orci. In dapibus velit blandit pharetra tincidunt. Quisque non sapien nec lacus condimentum facilisis ut iaculis enim. Sed viverra interdum bibendum. Donec ac sollicitudin dolor. Sed fringilla vitae lacus at rutrum. Phasellus congue vestibulum ligula sed consequat.</p>
-            <p>Vestibulum consectetur scelerisque lacus, ac fermentum lorem convallis sed. Nam odio tortor, dictum quis malesuada at, pellentesque vitae orci. Vivamus elementum, felis eu auctor lobortis, diam velit egestas lacus, quis fermentum metus ante quis urna. Sed at facilisis libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum bibendum blandit dolor. Nunc orci dolor, molestie nec nibh in, hendrerit tincidunt ante. Vivamus sem augue, hendrerit non sapien in, mollis ornare augue.</p>
+            <h1 id="Income">Income</h1>
+            <div id="headerDivImg">
+              <div id="titleTextImg">
+                <p>Please choose the pay frequency and amount per pay period (after all taxes and deductions) of all income sources.</p>
+                <div class="row">
+                  <div class="col-sm-3">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Description</span>
+                    <input type="text" class="form-control" placeholder="Salary" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                  <div class="col-sm-3">
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                      Pay Frequency
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Weekly</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bi-weekly</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Semi-monthly (15th and 30th)</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Monthly</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quarterly</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                    </ul>
+                  </div>
+                  </div>
+                  <div class="col-sm-3">
+                  <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Income / Pay Period $</span>
+                    <input type="text" class="form-control" placeholder="7500.00" aria-describedby="basic-addon1">
+                  </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <a id="imageDivLink" href="javascript:toggle5('contentDivImg', 'imageDivLink');"><img src="assets/plus.png"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+              <div id="contentDivImg" style="display: none;">
+                <div id="headerDivImg1">
+                  <div class="row">
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">Description</span>
+                      <input type="text" class="form-control" placeholder="Spouse Salary" aria-describedby="basic-addon1">
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        Pay Frequency
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Weekly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bi-weekly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Semi-monthly (15th and 30th)</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Monthly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quarterly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                      </ul>
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">Income / Pay Period $</span>
+                      <input type="text" class="form-control" placeholder="4500.00" aria-describedby="basic-addon1">
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <a id="imageDivLink1" href="javascript:toggle5('contentDivImg1', 'imageDivLink1');"><img src="assets/plus.png"></a>
+                    </div>
+                  </div>
+                </div>
+
+                  <div id="contentDivImg1" style="display: none;">
+                    <div class="row">
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">Description</span>
+                      <input type="text" class="form-control" placeholder="Additional Income" aria-describedby="basic-addon1">
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+                    <div class="dropdown">
+                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        Pay Frequency
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Weekly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bi-weekly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Semi-monthly (15th and 30th)</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Monthly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Quarterly</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                      </ul>
+                    </div>
+                    </div>
+                    <div class="col-sm-3">
+                    <div class="input-group">
+                      <span class="input-group-addon" id="basic-addon1">Income / Pay Period $</span>
+                      <input type="text" class="form-control" placeholder="3000.00" aria-describedby="basic-addon1">
+                    </div>
+                    </div>
+                  </div>
+                </div>
             
             <h1 id="MonthlyExpenses">Monthly Expenses</h1>
             <p>Integer pulvinar leo id risus pellentesque vestibulum. Sed diam libero, sodales eget sapien vel, porttitor bibendum enim. Donec sed nibh vitae lorem porttitor blandit in nec ante. Pellentesque vitae metus ipsum. Phasellus sed nunc ac sem malesuada condimentum. Etiam in aliquam lectus. Nam vel sapien diam. Donec pharetra id arcu eget blandit. Proin imperdiet mattis augue in porttitor. Quisque tempus enim id lobortis feugiat. Suspendisse tincidunt risus quis dolor fringilla blandit. Ut sed sapien at purus lacinia porttitor. Nullam iaculis, felis a pretium ornare, dolor nisl semper tortor, vel sagittis lacus est consequat eros. Sed id pretium nisl. Curabitur dolor nisl, laoreet vitae aliquam id, tincidunt sit amet mauris.</p>
@@ -179,5 +285,19 @@
           </div>
         </div>
       </div>
+      <script>
+      function toggle5(showHideDiv, switchImgTag) {
+        var ele = document.getElementById(showHideDiv);
+        var imageEle = document.getElementById(switchImgTag);
+        if(ele.style.display == "block") {
+                ele.style.display = "none";
+                imageEle.innerHTML = '<img src="assets/plus.png">';
+                    }
+        else {
+                ele.style.display = "block";
+                imageEle.innerHTML = '<img src="assets/minus.png">';
+        }
+      }
+      </script>
     </body>
 </html>                                   
