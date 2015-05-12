@@ -48,7 +48,7 @@
   <div class="row">
     <div class="col-sm-2 nav_scroll" id="myScrollspy">
         <ul class="nav nav-pills nav-stacked affix-top" data-spy="affix">
-            <li class="spy_list active"><a href="#BasicInfo">Basic Info</a></li>
+            <li class="spy_list"><a href="#BasicInfo">Basic Info</a></li>
             <li class="spy_list"><a href="#Income">Income</a></li>
             <li class="spy_list"><a href="#MonthlyExpenses">Monthly Expenses</a></li>
             <li class="spy_list"><a href="#InsuranceAndLoans">Insurance and Loans</a></li>
@@ -865,13 +865,443 @@
                           </div>
                       </div>
                   </div>
-                  
+              <p><b>Living:</b></p> 
+              <p><b>Personal Care:</b></p>
+              <p><b>Entertainment:</b></p>
+              <p><b>Medical/Health:</b></p>
+              <p><b>Other:</b></p>
 
             <h1 id="InsuranceAndLoans">Insurance and Loans</h1>
-            <p>Suspendisse a orci facilisis, dignissim tortor vitae, ultrices mi. Vestibulum a iaculis lacus. Phasellus vitae convallis ligula, nec volutpat tellus. Vivamus scelerisque mollis nisl, nec vehicula elit egestas a. Sed luctus metus id mi gravida, faucibus convallis neque pretium. Maecenas quis sapien ut leo fringilla tempor vitae sit amet leo. Donec imperdiet tempus placerat. Pellentesque pulvinar ultrices nunc sed ultrices. Morbi vel mi pretium, fermentum lacus et, viverra tellus. Phasellus sodales libero nec dui convallis, sit amet fermentum sapien auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed eu elementum nibh, quis varius libero.</p>
-            <p>Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Ut tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit at lacus blandit, commodo iaculis justo viverra. Etiam vitae est arcu. Mauris vel congue dolor. Aliquam eget mi mi. Fusce quam tortor, commodo ac dui quis, bibendum viverra erat. Maecenas mattis lectus enim, quis tincidunt dui molestie euismod. Curabitur et diam tristique, accumsan nunc eu, hendrerit tellus.</p>
-            <p>Phasellus fermentum, neque sit amet sodales tempor, enim ante interdum eros, eget luctus ipsum eros ut ligula. Nunc ornare erat quis faucibus molestie. Proin malesuada consequat commodo. Mauris iaculis, eros ut dapibus luctus, massa enim elementum purus, sit amet tristique purus purus nec felis. Morbi vestibulum sapien eget porta pulvinar. Nam at quam diam. Proin rhoncus, felis elementum accumsan dictum, felis nisi vestibulum tellus, et ultrices risus felis in orci. Quisque vestibulum sem nisl, vel congue leo dictum nec. Cras eget est at velit sagittis ullamcorper vel et lectus. In hac habitasse platea dictumst. Etiam interdum iaculis velit, vel sollicitudin lorem feugiat sit amet. Etiam luctus, quam sed sodales aliquam, lorem libero hendrerit urna, faucibus rhoncus massa nibh at felis. Curabitur ac tempus nulla, ut semper erat. Vivamus porta ullamcorper sem, ornare egestas mauris facilisis id.</p>
-            <p>Ut ut risus nisl. Fusce porttitor eros at magna luctus, non congue nulla eleifend. Aenean porttitor feugiat dolor sit amet facilisis. Pellentesque venenatis magna et risus commodo, a commodo turpis gravida. Nam mollis massa dapibus urna aliquet, quis iaculis elit sodales. Sed eget ornare orci, eu malesuada justo. Nunc lacus augue, dictum quis dui id, lacinia congue quam. Nulla sem sem, aliquam nec dolor ac, tempus convallis nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla suscipit convallis iaculis. Quisque eget commodo ligula. Praesent leo dui, facilisis quis eleifend in, aliquet vitae nunc. Suspendisse fermentum odio ac massa ultricies pellentesque. Fusce eu suscipit massa.</p>
+              <h2>Please list the monthly cost for your insurance payments, and the name, balance, interest rate, and monthly payment for your loans.</h2>
+              <p><b>Insurance:</b></p>
+              <p><b>Loans:</b></p>
+                <div class="row">
+                  <div class="col-sm-2">
+                    <p>Loan Type</p>
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Loan Name</p>
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Actual Balance</p>
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Interest rate</p>
+                  </div>
+                  <div class="col-sm-2">
+                    <p>Monthly Payment</p>
+                  </div>
+                  <div class="col-sm-2">
+                  </div>
+                </div>
+                <div id="headerDivImg_loan">
+                  <div id="titleTextImg_loan">
+                    <div class="row">
+                      <div class="col-sm-2">
+                        <div class="dropdown">
+                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                            Loan Type
+                            <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">$</span>
+                          <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                          <span class="input-group-addon" id="basic-addon1">%</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <div class="input-group">
+                          <span class="input-group-addon" id="basic-addon1">$</span>
+                          <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                        </div>
+                      </div>
+                      <div class="col-sm-2">
+                        <a id="imageDivLink_loan" href="javascript:toggle5('contentDivImg_loan', 'imageDivLink_loan');"><img src="assets/plus.png"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                  
+                  <div id="contentDivImg_loan" style="display: none;">
+                    <div id="headerDivImg_loan1">
+                      <div id="titleTextImg_loan1">
+                        <div class="row">
+                          <div class="col-sm-2">
+                            <div class="dropdown">
+                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                Loan Type
+                                <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="input-group">
+                              <span class="input-group-addon" id="basic-addon1">$</span>
+                              <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="input-group">
+                              <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                              <span class="input-group-addon" id="basic-addon1">%</span>
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <div class="input-group">
+                              <span class="input-group-addon" id="basic-addon1">$</span>
+                              <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                            </div>
+                          </div>
+                          <div class="col-sm-2">
+                            <a id="imageDivLink1" href="javascript:toggle5('contentDivImg1', 'imageDivLink1');"><img src="assets/plus.png"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      
+                      <div id="contentDivImg1" style="display: none;">
+                        <div id="headerDivImg_loan2">
+                          <div id="titleTextImg_loan2">
+                            <div class="row">
+                              <div class="col-sm-2">
+                                <div class="dropdown">
+                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                    Loan Type
+                                    <span class="caret"></span>
+                                  </button>
+                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">$</span>
+                                  <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="input-group">
+                                  <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                                  <span class="input-group-addon" id="basic-addon1">%</span>
+                                </div>
+                              </div>
+                              <div class="col-sm-2">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">$</span>
+                                  <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                                </div>
+                              </div>
+                              <div class="col-sm-2">
+                                <a id="imageDivLink2" href="javascript:toggle5('contentDivImg2', 'imageDivLink2');"><img src="assets/plus.png"></a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                          
+                          <div id="contentDivImg2" style="display: none;">
+                            <div id="headerDivImg_loan3">
+                              <div id="titleTextImg_loan3">
+                                <div class="row">
+                                  <div class="col-sm-2">
+                                    <div class="dropdown">
+                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                        Loan Type
+                                        <span class="caret"></span>
+                                      </button>
+                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <div class="input-group">
+                                      <span class="input-group-addon" id="basic-addon1">$</span>
+                                      <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <div class="input-group">
+                                      <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                                      <span class="input-group-addon" id="basic-addon1">%</span>
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <div class="input-group">
+                                      <span class="input-group-addon" id="basic-addon1">$</span>
+                                      <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                                    </div>
+                                  </div>
+                                  <div class="col-sm-2">
+                                    <a id="imageDivLink3" href="javascript:toggle5('contentDivImg3', 'imageDivLink3');"><img src="assets/plus.png"></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                              
+                              <div id="contentDivImg3" style="display: none;">
+                                <div id="headerDivImg_loan4">
+                                  <div id="titleTextImg_loan4">
+                                    <div class="row">
+                                      <div class="col-sm-2">
+                                        <div class="dropdown">
+                                          <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                            Loan Type
+                                            <span class="caret"></span>
+                                          </button>
+                                          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <div class="input-group">
+                                          <span class="input-group-addon" id="basic-addon1">$</span>
+                                          <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <div class="input-group">
+                                          <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                                          <span class="input-group-addon" id="basic-addon1">%</span>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <div class="input-group">
+                                          <span class="input-group-addon" id="basic-addon1">$</span>
+                                          <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-2">
+                                        <a id="imageDivLink4" href="javascript:toggle5('contentDivImg4', 'imageDivLink4');"><img src="assets/plus.png"></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                  
+                                  <div id="contentDivImg4" style="display: none;">
+                                    <div id="headerDivImg_loan5">
+                                      <div id="titleTextImg_loan5">
+                                        <div class="row">
+                                          <div class="col-sm-2">
+                                            <div class="dropdown">
+                                              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                Loan Type
+                                                <span class="caret"></span>
+                                              </button>
+                                              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                              </ul>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <div class="input-group">
+                                              <span class="input-group-addon" id="basic-addon1">$</span>
+                                              <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <div class="input-group">
+                                              <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                                              <span class="input-group-addon" id="basic-addon1">%</span>
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <div class="input-group">
+                                              <span class="input-group-addon" id="basic-addon1">$</span>
+                                              <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                                            </div>
+                                          </div>
+                                          <div class="col-sm-2">
+                                            <a id="imageDivLink5" href="javascript:toggle5('contentDivImg5', 'imageDivLink5');"><img src="assets/plus.png"></a>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                      
+                                      <div id="contentDivImg5" style="display: none;">
+                                        <div id="headerDivImg_loan6">
+                                          <div id="titleTextImg_loan6">
+                                            <div class="row">
+                                              <div class="col-sm-2">
+                                                <div class="dropdown">
+                                                  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    Loan Type
+                                                    <span class="caret"></span>
+                                                  </button>
+                                                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-2">
+                                                <div class="input-group">
+                                                  <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-2">
+                                                <div class="input-group">
+                                                  <span class="input-group-addon" id="basic-addon1">$</span>
+                                                  <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-2">
+                                                <div class="input-group">
+                                                  <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                                                  <span class="input-group-addon" id="basic-addon1">%</span>
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-2">
+                                                <div class="input-group">
+                                                  <span class="input-group-addon" id="basic-addon1">$</span>
+                                                  <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                                                </div>
+                                              </div>
+                                              <div class="col-sm-2">
+                                                <a id="imageDivLink6" href="javascript:toggle5('contentDivImg6', 'imageDivLink6');"><img src="assets/plus.png"></a>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                          
+                                          <div id="contentDivImg6" style="display: none;">
+                                            <div id="headerDivImg_loan7">
+                                              <div id="titleTextImg_loan7">
+                                                <div class="row">
+                                                  <div class="col-sm-2">
+                                                    <div class="dropdown">
+                                                      <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        Loan Type
+                                                        <span class="caret"></span>
+                                                      </button>
+                                                      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Student</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Personal</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Secured</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Credit Card</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Past Due Income Taxes</a></li>
+                                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other</a></li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-2">
+                                                    <div class="input-group">
+                                                      <input type="text" class="form-control" placeholder="American Express" aria-describedby="basic-addon1">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-2">
+                                                    <div class="input-group">
+                                                      <span class="input-group-addon" id="basic-addon1">$</span>
+                                                      <input type="text" class="form-control" placeholder="2300" aria-describedby="basic-addon1">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-2">
+                                                    <div class="input-group">
+                                                      <input type="text" class="form-control" placeholder="10" aria-describedby="basic-addon1">
+                                                      <span class="input-group-addon" id="basic-addon1">%</span>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-2">
+                                                    <div class="input-group">
+                                                      <span class="input-group-addon" id="basic-addon1">$</span>
+                                                      <input type="text" class="form-control" placeholder="105" aria-describedby="basic-addon1">
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-sm-2">
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                </div>
+
+
+           
           </div>
         </div>
       </div>
