@@ -88,6 +88,16 @@ p {
 	padding-bottom: 10px;	
 }
 
+#footer {
+	width: 100%;
+	text-align: center;
+	font-family: 'Helvetica Light', sans-serif;
+	font-size: 15px;
+	color: white;
+	background-color: #2a2a2a;
+
+}
+
 @media screen and (min-width: 640px) {
 	.custom_container {
 		width: 80%;
