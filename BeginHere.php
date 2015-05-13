@@ -18,7 +18,7 @@
 <body data-spy="scroll" data-target="#myScrollspy">
 <div id="wrapper">
     <div id="header">
-      <? include("navbar.php"); ?>
+      <?php include("navbar.php"); ?>
     </div>
 
 <div id="content_wrapper">
