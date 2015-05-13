@@ -9,6 +9,7 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="chosen_v1.4.2/chosen.css" rel="stylesheet">
     <link href="style_app.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="assets/Levanto_logo.ico">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="chosen_v1.4.2/chosen.jquery.js"></script>
@@ -59,9 +60,10 @@
         </ul>
     </div>
         <div class="col-sm-10 content">
-
-            <h1 id="BasicInfo">Basic Info</h1>
-
+          <p>Providing your information is necessary so that Levanto is able to build your Personal Cash Flow Plan. Please have an understanding of your personal finance goals, household information, bill statements, and basic living expenses ready.
+ 
+          Once you have completed the following steps, you will be able to schedule an appointment to virtually meet with one of Levanto's Household Finance Officers.</p>
+          <h1 id="BasicInfo">Basic Info</h1>
             <div class="row">
               <div class="col-sm-6">
                 <div class="input-group">
@@ -151,9 +153,9 @@
                 </div></div>
               </div>
 
-               <div class="col-sm-6"> 
+              <div class="col-sm-6"> 
                 <p>What are your top 3 financial objectives?</p>
-                <select data-placeholder="Choose 3 objectives" class="chosen-select" multiple style="width:350px;" tabindex="4">
+                <select data-placeholder="Choose 3 objectives" class="chosen-select" multiple style="width:350px;" tabindex="11">
                   <option value=""></option>
                   <option value="Save Time">Save Time</option>
                   <option value="Create Wealth">Create Wealth</option>
@@ -163,6 +165,11 @@
                   <option value="Other">Other</option>
                 </select>
                 <script>$(".chosen-select").chosen();</script> 
+              </div>
+
+              <div class="col-sm-6">
+                <p>Tell us about your personal financial situation.</p>
+                <textarea rows="3" class="form-control" aria-describedby="basic-addon1"></textarea>
               </div>
             </div>
 
@@ -1312,6 +1319,8 @@
       <button type="button" class="btn btn-primary"><b>SUBMIT</b></button>
     </div>
   </div>
+
+  <div class="text-center">By clicking Submit, you agree to the <a href="PrivacyPolicy.html">Privacy Policy</a>.</div>
 
   <div id="footer">
     <p class="footer_text"><b>CALL US TOLL FREE</b></p>
