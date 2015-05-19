@@ -42,6 +42,10 @@ p {
 	color: #333333;
 }
 
+p.second_heading {
+	padding-top: 12px;
+}
+
 .custom_container {
 	width: 85%;
 	margin: auto;
