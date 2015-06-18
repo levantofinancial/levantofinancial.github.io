@@ -50,7 +50,7 @@ article {
 
 @media screen and (min-width: 640px) {
 	article {
-		max-height: 20em;
+		max-height: 10em;
 	}
 }
 
