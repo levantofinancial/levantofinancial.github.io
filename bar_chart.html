@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Current Cash Flow Plan</title>
+	<link rel="stylesheet" href="current.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+</head>
+<body>
+<script>
+var w = 800;
+var h= 450;
+var margin={
+	top:50,
+	bottom:40,
+	left:60,
+	right:40
+};
+var width= w-margin.left - margin.right;
+var height = h-margin.top - margin.bottom;
+
+var data = [
+	{key: "Housing",			value: 4360},
+	{key: "Transport.",		value: 3115},
+	{key: "Savings",			value: 125 },
+	{key: "Debt",				value: 1246},
+	{key: "Living",				value: 3613}
+]; 
+
+var x =  d3.scale.ordinal()
+		.domain(data.map(function(entry){ // map returns a new array
+			return entry.key;
+			}))
+	
+		.rangeBands([0,width]);
+
+
+var y=  d3.scale.linear()
+		.domain([0,d3.max(data, function(d){
+			return d.value;
+		})]) //expects an array of smallest and larger value
+		.range([height,0]);
+
+var yGridlines= d3.svg.axis()
+				.scale(y)
+				.tickSize(-width,0,0)
+				.tickFormat("")
+				.orient("left");
+
+
+//ordinal scaling function
+/*var x = d3.scale.ordinal()
+		.domain(data.map(function(entry){ // map returns a new array
+			return entry.key;
+			}))
+	
+		.range([0, width]); // scale to width of svg elemet*/
+
+
+
+
+//linear scaling function
+/*var x = d3.scale.linear()
+		.domain([0,d3.max(data, function(d){
+			return d.value;
+		})]) //expects an array of smallest and larger value
+		.range([d3.min(data, function(d){
+			return d.value;
+			}), width]); // scale to width of svg elemet
+var y= d3.scale.linear()
+		.domain([0,data.length])
+		.range([0,height]);
+*/
+
+var linearColorScale = d3.scale.linear()
+						.domain([0,data.length])
+						.range(["#2A6799","#6BBAE8"]); //creating a linear scale 0 - max index. and range min value of 1st color and transitions to other color
+//add labels to bars
+var xAxis =d3.svg.axis()
+			.scale(x)
+			.orient("bottom");
+var yAxis =d3.svg.axis()
+			.scale(y)
+			.orient("left");
+
+var svg = d3.select("body").append("svg") //selects body tag. stored wihtin svg variable. Append adds svg tag to body
+			//attr allows us to add attributes to the svg tag
+			.attr("id","chart") 
+			.attr("width",w) //setting height and width to SVG element 
+			.attr("height",h);
+
+//groups svg elements together so we can move it as one
+var chart = svg.append("g")
+			.classed("display", true)
+			.attr("transform","translate(" + margin.left + "," + margin.top +")");
+
+
+function plot(params){
+			this.append("g")
+				.call(yGridlines)
+				.classed("gridline",true)
+				.attr("transform","translate(0,0)")
+
+			this.selectAll(".bar")
+			.data(params.data)
+			.enter()
+				.append("rect") //appending a rectangle for each data point in data array
+				.classed("bar", true) //setting attributes for rectangle data point
+				.attr("x",function(d,i){
+					return x(d.key);
+				})
+				.attr("y", function(d,i){
+					return y(d.value); //index * 20 (height) forces them to stagger
+				})
+				.attr("height", function(d,i){
+					return height - y(d.value);
+				}) // adds seperation between bars
+				.attr("width",function(d,i){ //d= data , i = index 
+						return x.rangeBand(); //return width of 1 range band
+				})
+				
+				.style("fill",function(d,i){
+					return linearColorScale(i);
+				});
+
+
+		this.selectAll(".bar-label")
+			.data(params.data)
+			.enter()
+				.append("text") //add text label
+				.classed("bar-label",true)
+				.attr("x",function(d,i){
+					return x(d.key) + (x.rangeBand()/2)
+				})
+				.attr("y", function(d,i){
+					return y(d.value);
+					}) //position of the text
+				.attr("dy", -6)
+				.attr("dx", 0)
+				.text(function(d,i){
+					return d.value;
+				});  // returns the data as text
+			this.append("g")
+				.classed("x axis",true)
+				.attr("transform","translate(" + 0 + "," + height + ")") 
+				.call(xAxis);	
+
+			this.append("g")
+				.classed("y axis",true)
+				.attr("transform","translate(0,0)")
+				.call(yAxis);
+
+			}
+
+plot.call(chart,{  //allows us to build a function to draw our chart
+	data:data
+})
+</script>
+</body>
