@@ -1,0 +1,30 @@
+
+#title{
+	text-align:center;
+	font-size:36px;
+	white-space: nowrap;
+}
+#client{
+	margin-top:4px;
+	font-size: 18px;
+	text-align: right;
+}
+#introheader{
+	text-align:center;
+	font-size: 21px;
+}
+#logo{
+	height: 50px;
+}
+
+.intro {
+	height:10vh;
+}
+
+.box{
+	height:30vh;
+
+}
+.mcgraph{
+	
+}
