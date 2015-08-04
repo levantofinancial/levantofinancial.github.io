@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Current Cash Flow Plan</title>
+	<link rel="stylesheet" href="testing.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+</head>
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+  .legend {
+    font-size: 12px;
+  }
+  .rect {
+    stroke-width: 2;
+  }
+
+
+</style>
+<body>
+	<div id = "chart"></div>
+
+<script>
+
+var dataset = [
+  { label: 'Housing', count: 4360 }, 
+  { label: 'Transport.', count: 3115 },
+  { label: 'Debt', count: 1246 },
+  { label: 'Living', count: 3613 },
+  { label: 'Savings', count: 125}
+];
+//dimensions for chart
+var width = 600;
+var height = 360;
+var radius = Math.min(width, height) / 2;     
+
+var color = d3.scale.category20c();
+
+var svg = d3.select('#chart')
+  .append('svg')
+  .attr('width', width)
+  .attr('height', height)
+  .append('g')
+ .attr('transform', 'translate(' + (width / 2 - 100) +  ',' + (height / 2) + ')');
+
+  var arc = d3.svg.arc()
+  .outerRadius(radius);
+
+  
+  
+
+
+  var pie = d3.layout.pie()
+  .value(function(d) { return d.count; })
+  .sort(null);
+
+  var path = svg.selectAll('path')
+  .data(pie(dataset))
+  .enter()
+  .append('path')
+  .attr('d', arc)
+  .attr('fill', function(d, i) { 
+    return color(d.data.label);
+  })
+
+
+
+  //legend
+var legendRectSize = 18;
+var legendSpacing = 4;
+
+var legend = svg.selectAll('.legend')
+  .data(color.domain())
+  .enter()
+  .append('g')
+  .attr('class', 'legend')
+  .attr('transform', function(d, i) {
+    var height = legendRectSize + legendSpacing;
+    var offset =  height * color.domain().length / 2;
+    var horz = 200;
+    var vert = i * height - offset;
+    return 'translate(' + horz + ',' + vert + ')';
+  });
+
+legend.append('rect')
+  .attr('width', legendRectSize)
+  .attr('height', legendRectSize)
+  .style('fill', color)
+  .style('stroke', color);
+
+  legend.append('text')
+  .attr('x', legendRectSize + legendSpacing)
+  .attr('y', legendRectSize - legendSpacing)
+  .text(function(d) { return d; });
+
+
+
+
+
+</script>
+</body>
